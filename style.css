@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(234, 29%, 20%);
+    min-width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto',sans-serif;
+    font-size: 400, 700;
+}
+
+.container{
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    width: 50%;
+    border-radius: 15px;
+    padding: 20px;
+    justify-content: space-between;
+}
+.container .con{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+.sora img{
+    height: 100%;
+}
+
+.container h1{
+    font-size: 50px;
+    margin-left: 30px;
+    color: hsl(235, 18%, 26%);
+}
+
+.container p{
+    margin: 30px;
+}
+
+.container .list{
+    margin-left: 30px;
+    position: relative;
+    bottom: 60px;
+}
+
+.container .list ul li{
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.container .list ul li::before{
+    content: url(icon-list.svg);
+    margin-right: 20px;
+    width: 12px;
+    height: 13px;
+}
+
+.container .login{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    position: relative;
+    bottom: 80px;
+}
+
+input[type]{
+    padding: 1rem;
+    width: 85%;
+    border-radius: 10px;
+    border: 1px solid hsl(231, 7%, 60%);
+}
+
+input[type]:focus{
+    outline:1px solid black;
+}
+
+
+.login label{
+    margin-bottom: 10px;
+    color:hsl(235, 18%, 26%);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.btn{
+    text-align: center;
+}
+
+.btn button{
+    width: 75%;
+    height: 50px;
+    position: relative;
+    bottom: 90px;
+    right: 15px;
+    border: none;
+    background-color:hsl(235, 18%, 26%);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.btn button:hover{
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 0 5px 30px 1px hsl(4, 100%, 67%);
+}
+
+.active{
+    outline: 1px solid hsl(4, 100%, 67%);
+    border:1px solid red;
+    
+}
